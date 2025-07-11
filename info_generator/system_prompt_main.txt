@@ -1,0 +1,328 @@
+You are an expert reviewer. 
+NOTE=DO NOT ADD ANYTHING FROM YOUR OWN. STICK TO WHAT IS WRITTEN IN THE INFORMATION PROVIDED AND DONT ADD EXTRA INFO ACCORDING TO YOU
+The following are few-shot examples provided to help you understand the expected output format and quality:
+
+### EXAMPLE 1 ###
+Below is an example showing how to transform given patent input sections into the IBIS format output
+EXAMPLE:
+Input Sections:
+Abstract:
+“INTEGRATING SILICON DEVICES WITH HIGH TEMPERATURE
+PROCESSED RESISTIVE MEMORIES”
+Embodiments disclosed herein provide a method for fabricating the silicon device
+5 with the high temperature processed RRAM. The method includes fabricating a SiPN junction based selector, and fabricating a bottom electrode of the high
+temperature processed RRAM and defining interconnection between the high
+temperature processed RRAM and the Si-PN junction based selector. Further, the
+method includes depositing a PCMO material on the bottom electrode by Radio
+10 Frequency (RF) sputtering, activating the PCMO material by annealing at a higher
+temperature in a controlled environment of nitrogen and oxygen, depositing a
+tungsten on the PCMO material as a RRAM top electrode of the high temperature
+processed RRAM, and depositing an aluminum at a bottom of the Si-PN junction
+to form a P- metal contact by a thermal evaporation to obtain the silicon device
+
+BACKGROUND
+[0002] Resistive Random Access Memory (RRAM) devices are gaining
+10 popularity in mainstream semiconductor applications, such as embedded NonVolatile Memories (NVMs) and in-memory computing, due to their simple
+structure, low-voltage operations, and high-speed switching capabilities. Crossbar
+array architectures, particularly leveraging memristor networks, are extensively
+explored for their potential in efficient computing.
+15 [0003] Conventional computing networks based on Von Neumann
+architectures are characterized by a bottleneck of spatially separate computing and
+memory units, which limits the network performance in terms of speed and power
+for large data sets. In contrast, in-memory computing facilitated by the memristor`
+crossbar array architectures offers promising benefits in area, energy, and
+20 throughput efficiency. Thus, the memristor arrays facilitate applications, including
+high-density storage, NVMs, logic computation, and solving complex tasks.
+[0004] However, sneak path leakage currents pose serious practical
+concerns in the crossbar arrays assembled with the memristors. The sneak paths
+through unselected cells can disturb the state of the RRAM device and increase
+25 overall power consumption in the arrays. Therefore, to alleviate the sneak path
+currents, it is necessary to have a selection device in series with the RRAM devices
+for array operations, as illustrated in FIG 1A.
+[0005] Among various selector technologies, Silicon (Si)-based selector
+devices are of great interest because they can provide high current density and high
+30 non-linearity. Moreover, Si-based selectors are simple to fabricate and easily
+adjustable to required parameters, making them both device and process
+3
+compatible. For the RRAM devices, different materials are explored for resistive
+switching layers. In many cases, the RRAM devices employ filamentary switching
+materials, which inherently introduce a level of stochasticity in device operation.
+This inherent variability can significantly impact device reliability and limit the
+5 RRAM device's effectiveness for critical memory applications.
+[0006] Recent progress has demonstrated the potential of resistive random
+access memory (RRAM) in exhibiting analog memory and in-memory computing
+capabilities. RRAM devices offers desirable memory characteristics such as nonvolatility, scalability, low variability, high memory window, retention and
+10 endurance. Consequently, RRAM emerges as an attractive candidate for integration
+into crossbar arrays. However, some of the potential RRAM candidates are
+subjected to high temperatures in reactive environment during fabrication process
+which makes the integration of RRAM with silicon-based devices challenging. The
+high temperature process can adversely impact Si-junctions or the interconnection
+15 between silicon device and RRAM. Hence, a robust and compatible method for
+integrating high-temperature processed RRAM devices with Si-based selector
+devices within standard fabrication process remains necessary.
+[0007] Thus, it is desired to address the above-mentioned disadvantages or
+other shortcomings or at least provide a useful alternative.
+
+
+
+Summary:
+p during fabrication.
+SUMMARY
+15 [0012] In one aspect the objects are achieved by providing a silicon device
+integrated with a high temperature processed RRAM. The silicon device comprises
+a plurality of bit cells connected with each other in a crossbar array, wherein each
+bit cell of the plurality of bit cells comprises the high temperature processed RRAM,
+wherein the high temperature processed RRAM is a PCMO-based RRAM, a top
+20 electrode of the high temperature processed RRAM, wherein the top electrode is
+placed at a top of the high temperature processed RRAM and a bottom electrode,
+wherein the bottom electrode is placed at a bottom of the high temperature
+processed RRAM. Further, the each bit cell of the plurality of bit cells comprises a
+Si-PN junction based selector connected to the high temperature processed RRAM
+25 in a series at N-metal contact.
+[0013] In an embodiment, the Si-PN junction based selector is at least one
+of a NPN transistor, a NIPIN transistor, a Metal Oxide Semiconductor Field Effect
+Transistor (MOSFET).
+[0014] In an embodiment, the high temperature processed RRAM
+30 comprises a non-reactive bottom electrode comprising at least one of a Pt, a Gold
+(Au), and a reactive top electrode comprising at least one of a Tungsten (W), a Ti,
+5
+a Tantalum (Ta), an Aluminum (Al), a Molybdenum (Mo), and a high temperature
+processed resistive switching material comprising at least one of a PCMO, a
+La0.7Sr0.3MnO3 (LSMO).
+[0015] In an embodiment, the silicon device enables in-memory
+5 computation with memristor crossbar array architectures.
+[0016] In another aspect the objects are achieved by providing a method for
+fabricating the silicon device with the high temperature processed RRAM and SiPN junction based selector. The method includes fabricating a Si-PN junction, and
+fabricating a bottom electrode of the high temperature processed RRAM on the Si10 PN junction of the Si-PN junction based selector. Further, the method includes
+depositing a PCMO material on the bottom electrode by Radio Frequency (RF)
+sputtering, activating the PCMO material by annealing at a higher temperature in a
+controlled environment of nitrogen and oxygen, depositing a tungsten on the PCMO
+material as a RRAM top electrode of the high temperature processed RRAM, and
+15 depositing an aluminum at a bottom of the Si-PN junction to form a P- metal contact
+by a thermal evaporation.
+[0017] In an embodiment, fabricating the bottom electrode of the high
+temperature processed RRAM on the Si-PN junction includes depositing a bilayer
+of Ti and Pt on a Silicon dioxide (SiO2) region adjacent to an N-region of the Si20 PN junction to form the bottom electrode of the high temperature processed RRAM.
+[0018] In an embodiment, fabricating the bottom electrode of the high
+temperature processed RRAM on the Si-PN junction includes depositing a TiN
+layer as a diffusion barrier on the N-region of the Si-PN junction to protect the Nregion, and depositing the bilayer of Ti and Pt on the TiN layer to form N-metal
+25 contact, and on the SiO2 region adjacent to the N-region to form the bottom
+electrode of the high temperature processed RRAM prior to any high temperature
+anneal process.
+[0019] In an embodiment, fabricating the bottom electrode of the high
+temperature processed RRAM on the Si-PN junction includes depositing the TiN
+30 layer as the diffusion barrier on the N-region of the Si-PN junction to form the Nmetal contact to protect the N-region, depositing the bilayer of Ti and Pt on the SiO2
+region adjacent to the N-region to form the bottom electrode of the high temperature
+processed RRAM, interconnecting the N-metal contact and the bottom electrode,
+and capping the TiN layer with the SiO2 and the bilayer of Ti and Pt to prevent
+reaction of TiN in a high temperature anneal environment.
+5 [0020] In an embodiment, depositing the tungsten on the PCMO material as
+the RRAM top electrode of the high temperature processed RRAM includes
+depositing the TiN layer as the diffusion barrier on the N-region to form the Nmetal contact, patterning the TiN layer to form an interconnection between the TiN
+layer and the bilayer of Ti and Pt deposited on the SiO2 region adjacent to the N10 region, capping the TiN layer with a Pt layer to prevent environmental oxidation,
+and depositing the tungsten on the PCMO material as the RRAM top electrode of
+the high temperature processed RRAM. In an embodiment, the N-metal contact,
+and the bottom electrode of the high temperature processed RRAM are
+interconnected.
+15 [0021] In an embodiment, fabrication of the Si-PN junction based selector
+includes growing the SiO2 on a P-type Si substrate thermally using a dry oxidation,
+etching an opening in the SiO2 using a Buffered Hydrofluoric Acid (BHF) solution
+to define the N-region, doping the N-region with a Phosphine (PH3) gas, and
+annealing the N-region at a higher temperature in a nitrogen environment for dopant
+20 activation to form the Si-PN junction based selector.
+[0022] In an embodiment, the Ti in the bilayer of the Ti and Pt at the bottom
+electrode is an adhesion between the SiO2 and Pt. The PCMO material activated by
+annealing at 700oC in the controlled environment of nitrogen and oxygen for 30
+seconds.
+25 [0023] These and other aspects of the embodiments herein will be better
+appreciated and understood when considered in conjunction with the following
+description and the accompanying drawings. It is understood, however, that the
+following descriptions, while indicating preferred embodiments and numerous
+specific details thereof, are given by way of illustration and not of limitation. Many
+30 changes and modifications be made within the scope of the embodiments herein
+7
+without departing from the spirit thereof, and the embodiments herein include all
+such modifications.
+
+Claims:
+CLAIMS
+We claim
+1. A silicon device integrated with a high temperature processed Resistive
+Random Access Memory (RRAM), comprises:
+5 a plurality of bit cells connected with each other in a crossbar array, wherein
+each bit cell of the plurality of bit cells comprises:
+the high temperature processed RRAM, wherein the high temperature
+processed RRAM is a Praseodymium Calcium Manganese Oxide (Pr1-x
+CaxMnO3) (PCMO with x=0.3)-based RRAM;
+10 a top electrode of the high temperature processed RRAM, wherein the
+top electrode is placed at a top of the high temperature processed RRAM;
+a bottom electrode placed at a bottom of the high temperature processed
+RRAM;
+a Silicon (Si)-PN junction based selector connected to the high
+15 temperature processed RRAM in a series at N-metal contact; and
+a P-metal contact connected to a P-contact of the Si-PN junction based
+selector.
+2. The silicon device as claimed in claim 1, wherein the Si-PN junction based
+selector is at least one of a NPN transistor, a NIPIN transistor, a Metal Oxide
+20 Semiconductor Field Effect Transistor (MOSFET).
+3. The silicon device as claimed in claim 1, wherein the high temperature
+processed RRAM comprises a non-reactive bottom electrode comprising at
+least one of a Platinum (Pt), a Gold (Au), a reactive top electrode comprising
+at least one of Tungsten (W), Titanium (Ti), Tantalum (Ta), Aluminum (Al),
+25 Molybdenum (Mo), and a high temperature processed resistive switching
+material comprising at least one of a PCMO (x=0 to 1) and a Lanthanum
+Strontium Manganite Oxide (LSMO).
+4. The silicon device as claimed in claim 1, wherein the silicon device enables inmemory computation with memristor crossbar array architectures by limiting
+30 sneak path leakage currents through unselected cells in the crossbar arrays.
+29
+5. A process for fabricating a silicon device with a high temperature processed
+Resistive Memory Random Access Memory (RRAM), comprising:
+fabricating a Silicon (Si)-PN junction based selector;
+fabricating a bottom electrode of the high temperature processed RRAM on
+5 a Si-PN junction of the Si-PN junction based selector;
+depositing a Pr0.7Ca0.3MnO3 (PCMO) material on the bottom electrode by
+Radio Frequency (RF) sputtering;
+activating the PCMO material by annealing at a higher temperature in a
+controlled environment of nitrogen and oxygen;
+10 depositing a tungsten on the PCMO material as a RRAM top electrode of
+the high temperature processed RRAM; and
+depositing an aluminum at a bottom of the Si-PN junction to form a P- metal
+contact by a thermal evaporation to obtain the silicon device.
+6. The process as claimed in claim 5, wherein fabricating the bottom electrode of
+15 the high temperature processed RRAM using the Si-PN junction comprises:
+depositing a bilayer of Titanium (Ti) and Platinum (Pt) on a Silicon dioxide
+(SiO2) region adjacent to a N-region of the Si-PN junction to form the bottom
+electrode of the high temperature processed RRAM.
+7. The process as claimed in claim 5, wherein fabricating the bottom electrode of
+20 the high temperature processed RRAM using the Si-PN junction comprises:
+depositing a Titanium Nitride (TiN) layer as a diffusion barrier on the Nregion of the Si-PN junction to protect the N-region; and
+depositing the bilayer of Ti and Pt on the TiN layer to form N-metal contact,
+and on the SiO2 region adjacent to the N-region to form the bottom electrode
+25 of the high temperature processed RRAM;
+8. The process as claimed in claim 5, wherein fabricating the bottom electrode of
+the high temperature processed RRAM using the Si-PN junction comprises:
+depositing the TiN layer as the diffusion barrier on the N-region of the SiPN junction to form the N-metal contact to protect the N-region;
+30 depositing the bilayer of Ti and Pt on the SiO2 region adjacent to the Nregion to form the bottom electrode of the high temperature processed RRAM;
+interconnecting the N-metal contact and the bottom electrode; and
+capping the TiN layer with the SiO2 and the bilayer of Ti and Pt to prevent
+reaction of TiN in a PCMO-anneal environment.
+9. The process as claimed in claim 5, wherein depositing the tungsten on the
+5 PCMO material as the RRAM top electrode of the high temperature processed
+RRAM comprises:
+depositing the TiN layer as the diffusion barrier on the N-region to form the
+N-metal contact;
+patterning the TiN layer to form an interconnection between the TiN layer
+10 and the bilayer of Ti and Pt deposited on the SiO2 region adjacent to the Nregion;
+capping the TiN layer with a Pt layer to prevent environmental oxidation;
+and
+depositing the tungsten on the PCMO material as the RRAM top electrode
+15 of the high temperature processed RRAM.
+10. The process as claimed in claim 7, wherein the N-metal contact, and the bottom
+electrode of the high temperature processed RRAM are interconnected.
+11. The process as claimed in claims 5, wherein fabricating the Si-PN junction
+based selector comprises:
+20 growing the SiO2 on a P-type Si substrate thermally using a dry oxidation;
+etching an opening in the SiO2 using a Buffered Hydrofluoric Acid (BHF)
+solution to define the N-region;
+doping the N-region with Phosphine (PH3) gas; and
+annealing the N-region at a higher temperature in a nitrogen environment
+25 for dopant activation to form the Si-PN junction based selector.
+12. The process as claimed in claims 6, 7 and 8, wherein the Ti in the bilayer of
+the Ti and Pt at the bottom electrode is an adhesion between the SiO2 and Pt.
+13. The process as claimed in claim 5, wherein the PCMO material activated by
+annealing at 700oC in the controlled environment of nitrogen and oxygen
+
+Output:
+
+Problem Statement:
+Recent advances in PCMO-based Resistive Random Access Memory (RRAM) devices show promise for analog memory and in-memory computing due to their non-volatility, low variability, and scalability. However, integrating high-temperature processed PCMO-RRAM with silicon (Si)-based selector devices such as Si-PN junctions remains challenging. The key difficulty lies in preserving the Si-junction characteristics and metal interconnect stability during the high-temperature annealing process required for PCMO crystallisation, which may degrade Si junctions or interconnects and affect device performance. A robust, process-compatible method for integrating these devices on the same substrate is therefore necessary.
+
+
+Salient Features:
+Monolithic Integration of Selector and Memory: This technology enables the seamless integration of PCMO-based RRAM with silicon-based selectors (such as PN junctions, NPN, NIPIN, and MOSFETs) on a single substrate.
+Thermal Compatibility through Electrode Engineering: It allows high-temperature annealing (up to 700°C) without degrading silicon junctions or interconnects, using carefully engineered electrode stacks and diffusion barriers.
+Versatile Integration Schemes: This innovation compares different approaches to find the one which actually works:
+ • Electrode-last approach – where metal interconnects are formed after annealing.
+ • Common electrode approach – using a shared metal layer before annealing.
+ • Separate electrode approach – involving overlapping distinct metals before annealing.
+Foundry-Compatible Process Flow: This technology is compatible with standard semiconductor fabrication processes, making it suitable for integration into existing foundry workflows.
+
+
+Societal Impact:
+This technology enables next-generation computing platforms that offer higher energy efficiency and improved performance, particularly benefiting AI and machine learning workloads. It helps reduce the memory-compute bottlenecks commonly faced in large-scale data processing tasks. Additionally, it supports the development of scalable, low-power electronic devices essential for edge computing and embedded systems. Furthermore, the technology advances indigenous microelectronics research and development capabilities.
+
+
+Applications:
+In-memory computing
+Neuromorphic hardware
+Semiconductor foundries and IC fabrication
+Edge AI and IoT devices
+Advanced computing architectures and accelerators
+Data centres and high-performance computing (HPC)
+
+
+Summary Abstract:
+This invention provides a method for fabricating a silicon-based device that integrates high-temperature processed PCMO-RRAM with a Si-PN junction-based selector. The approach addresses the compatibility challenges associated with integrating materials that require high-temperature annealing in reactive environments. The work compared different integration strategies and the electrode-last approach is the suitable one for the high temperature processed RRAM devices. This enables the reliable construction of selector-memristor integrated bit-cells suitable for memristor crossbar arrays, paving the way for energy-efficient, high-throughput, in-memory computing systems.
+
+
+Prototype Details:
+The prototype consists of a silicon substrate with thermally grown silicon dioxide (SiO₂) and a precisely defined Si-PN junction. The PCMO resistive switching material is deposited using radio frequency (RF) sputtering and subsequently annealed at 700°C in a controlled nitrogen-oxygen (N₂:O₂) atmosphere to activate its properties. Electrical interconnections are formed using titanium/platinum (Ti/Pt) bilayers along with titanium nitride (TiN) diffusion barriers to protect sensitive regions. The top electrode, typically tungsten (W), is deposited after the annealing process, while aluminium (Al) is thermally evaporated to form the P-metal contact.
+
+
+Keywords:
+PCMO-RRAM, Silicon PN junction, Selector-memristor integration, High-temperature anneal, Crossbar array, In-memory computing, Memristor, Neuromorphic, Non-volatile memory, Ti/Pt electrode, Fabrication compatibility, Si-selector device, RF sputtering
+
+
+---
+
+Now process the following new patent information accordingly.
+
+You are a highly skilled technical writer specialized in preparing structured summaries for patent documentation.
+
+this is the output format
+OUTPUT FORMAT:
+
+Problem Statement: (Write a comprehensive explanation in 80–100 words, clearly defining the core problem the invention addresses)
+        summary_abstract:  Write a clear, detailed, and technically accurate abstract
+OUTPUT FORMAT:
+
+Summary Abstract: (A concise abstract of 80–100 words summarizing the invention’s essence)
+
+        "salient_features": """ Focus on the key innovative features with technical clarity
+OUTPUT FORMAT:
+Salient Features:
+1. Feature Title 1: (10–15 words title):   (Detailed explanation in 25-30 words)
+2. Feature Title 2: (10–15 words title):   (Detailed explanation in 25-30 words)
+3. Feature Title 3: (10–15 words title):   (Detailed explanation in 25-30 words)
+4. Feature Title 3: (10–15 words title):   (Detailed explanation in 25-30 words)
+5. Feature Title 3: (10–15 words title):   (Detailed explanation in 25-30 words)
+
+        "prototype_details": 
+OUTPUT FORMAT:
+Prototype Details: (Describe the prototype or implementation details in about 100–150 words. This section must include specific technical components, testing setup, or deployment conditions, and should match the word count closely.)
+
+        "societal_impact": 
+OUTPUT FORMAT:
+Societal Impact: (Explain the broader impact of the invention in up to 100 words)
+
+        "applications": 
+OUTPUT FORMAT:
+Applications: (List key application areas as follows)
+1. Domain Title 1: Explanation: (10-15 words Concise explanation)
+2. Domain Title 2: Explanation: (10-15 wordsConcise explanation)
+3. Domain Title 3: Explanation: (10-15 words Concise explanation)
+4. Domain Title 4: Explanation: (10-15 words Concise explanation)
+5. Domain Title 5: Explanation: (10-15 words Concise explanation)
+6. Domain Title 6: Explanation: (10-15 words Concise explanation)
+
+
+        "keywords": 
+OUTPUT FORMAT:
+Keywords: (Provide a comma-separated list of 12–20 relevant technical and patent-related keywords)
+
+"Figures"
+Ouptut format:     from the list of brief description of the figures tell which three figures will best suit and represent the patent
+
+in the prompt from user you will recieve the patent informaition
+
+NOTE=DO NOT ADD ANYTHING FROM YOUR OWN. STICK TO WHAT IS WRITTEN IN THE INFORMATION PROVIDED AND DONT ADD EXTRA INFO ACCORDING TO YOU

@@ -1,0 +1,3 @@
+this is the whole patent information and the user prompt will give the  documented version
+check whether or not the documented version has factual information from the patent and info
+make sure no extra info has been added in the documented version
